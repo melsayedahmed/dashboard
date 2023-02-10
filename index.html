@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="here you can manage every thing">
+    <title>Dashboard</title>
+    <!-- Link for External Css File Which has General Styles, the root and Utilities Classes -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- Link for External Css File Which has the Styles for Main Content -->
+    <link rel="stylesheet" href="./CSS/dashboard.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts Ubuntu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Script Tag For JavaScript External File -->
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="even-column">
+                <div class="even-column | logo">
+                    <figure>
+                        <input type="search" placeholder="Type A Keyword">
+                    </figure>
+                </div>
+                <div class="icons even-column">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/>
+                    </svg>
+                    <a href="./html/profile.html"><figure><img src="./imgs/avatar.png" alt="User Photo"></figure></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside>
+        <h3>Mohab</h3>
+        <nav>
+            <ul class="even-column">
+                <a href="./index.html">
+                    <li data-type="dashboard">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/>
+                        </svg>
+                    </li>
+                </a>
+                <a href="./HTML/setting.html">
+                    <li data-type="settings">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M0 416c0-17.7 14.3-32 32-32l54.7 0c12.3-28.3 40.5-48 73.3-48s61 19.7 73.3 48L480 384c17.7 0 32 14.3 32 32s-14.3 32-32 32l-246.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 448c-17.7 0-32-14.3-32-32zm192 0c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zM384 256c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zm-32-80c32.8 0 61 19.7 73.3 48l54.7 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-54.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l246.7 0c12.3-28.3 40.5-48 73.3-48zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zm73.3 0L480 64c17.7 0 32 14.3 32 32s-14.3 32-32 32l-214.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 128C14.3 128 0 113.7 0 96S14.3 64 32 64l86.7 0C131 35.7 159.2 16 192 16s61 19.7 73.3 48z"/>
+                        </svg>
+                    </li>
+                </a>
+                <a href="./HTML/profile.html">
+                    <li data-type="profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
+                        </svg>
+                    </li>
+                </a>
+                <a href="./HTML/projects.html">
+                    <li data-type="projects">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z"/>
+                        </svg>
+                    </li>
+                </a>
+                <a href="./HTML/courses.html">
+                    <li data-type="courses">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/>
+                        </svg>
+                    </li>
+                </a>
+                <a href="./HTML/friends.html">
+                    <li data-type="friends">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path d="M352 128c0 70.7-57.3 128-128 128s-128-57.3-128-128S153.3 0 224 0s128 57.3 128 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM609.3 512H471.4c5.4-9.4 8.6-20.3 8.6-32v-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2h61.4C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"/>
+                        </svg>
+                    </li>
+                </a>
+                <a href="./HTML/files.html">
+                    <li data-type="files">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"/>
+                        </svg>
+                    </li>
+                </a>
+                <a href="./HTML/plans.html">
+                    <li data-type="plans">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path d="M384 476.1L192 421.2V35.9L384 90.8V476.1zm32-1.2V88.4L543.1 37.5c15.8-6.3 32.9 5.3 32.9 22.3V394.6c0 9.8-6 18.6-15.1 22.3L416 474.8zM15.1 95.1L160 37.2V423.6L32.9 474.5C17.1 480.8 0 469.2 0 452.2V117.4c0-9.8 6-18.6 15.1-22.3z"/>
+                        </svg>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </aside>
+    <section class="content">
+        <h1 class="head-txt">Dashboard</h1>
+        <div class="head-back"><span class="head-front"></span></div>
+        <section class="component">
+            <div class="box personalBox">
+                <div class="top">
+                    <h2>Welcome</h2>
+                    <p>Mohab</p>
+                    <figure><img src="./imgs/avatar.png" alt="user photo"></figure>
+                </div>
+                <div class="bottom">
+                    <div class="even-column">
+                        <div class="title">
+                            <h4>Mohab</h3>
+                            <p>Developer</p>
+                        </div>
+                        <div class="title">
+                            <h4>80</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="title">
+                            <h4>$8500</h3>
+                            <p>Earned</p>
+                        </div>
+                    </div>
+                    <button>Profile</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <h2>Quick Draft</h2>
+                    <p>Write A Draft For Your Ideas</p>
+                </div>
+                <input type="text" placeholder="Title">
+                <textarea placeholder="Your Thoughts" name="" id="" cols="30" rows="10"></textarea>
+                <button>Save</button>
+            </div>
+            <div class="box progress-box">
+                <div class="top">
+                    <h3>Yearly Targets</h3>
+                    <p>Targets Of The Year</p>
+                </div>
+                <div class="chart">
+                    <p>Money</p>
+                    <h6>$20.000</h6>
+                    <div class="prog-parent">
+                        <span data-prog="80%" class="prog1"></span>
+                    </div>
+                </div>
+                <div class="chart">
+                    <p>Projects</p>
+                    <h6>24</h6>
+                    <div class="prog-parent">
+                        <span data-prog="55%" class="prog2"></span>
+                    </div>
+                </div>
+                <div class="chart">
+                    <p>Team</p>
+                    <h6>12</h6>
+                    <div class="prog-parent">
+                        <span data-prog="75%" class="prog3"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="head">
+                    <h1>Tickets Statistics</h1>
+                    <p>Everything About Support Tickets</p>
+                </div>
+                <div class="body ticket-body">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M128 192C110.3 192 96 177.7 96 160C96 142.3 110.3 128 128 128C145.7 128 160 142.3 160 160C160 177.7 145.7 192 128 192zM200 160C200 146.7 210.7 136 224 136H448C461.3 136 472 146.7 472 160C472 173.3 461.3 184 448 184H224C210.7 184 200 173.3 200 160zM200 256C200 242.7 210.7 232 224 232H448C461.3 232 472 242.7 472 256C472 269.3 461.3 280 448 280H224C210.7 280 200 269.3 200 256zM200 352C200 338.7 210.7 328 224 328H448C461.3 328 472 338.7 472 352C472 365.3 461.3 376 448 376H224C210.7 376 200 365.3 200 352zM128 224C145.7 224 160 238.3 160 256C160 273.7 145.7 288 128 288C110.3 288 96 273.7 96 256C96 238.3 110.3 224 128 224zM128 384C110.3 384 96 369.7 96 352C96 334.3 110.3 320 128 320C145.7 320 160 334.3 160 352C160 369.7 145.7 384 128 384zM0 96C0 60.65 28.65 32 64 32H512C547.3 32 576 60.65 576 96V416C576 451.3 547.3 480 512 480H64C28.65 480 0 451.3 0 416V96zM48 96V416C48 424.8 55.16 432 64 432H512C520.8 432 528 424.8 528 416V96C528 87.16 520.8 80 512 80H64C55.16 80 48 87.16 48 96z"/></svg>
+                        <h1>2500</h1>
+                        <p>Total</p>
+                    </div>
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg>
+                        <h1>500</h1>
+                        <p>Pending</p>
+                    </div>
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+                        <h1>1900</h1>
+                        <p>Closed</p>
+                    </div>
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm79 143c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                        <h1>100</h1>
+                        <p>Deleted</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="head">
+                    <h1>Latest News</h1>
+                </div>
+                <div class="news-body">
+                    <div class="new even-column">
+                        <div class="even-column">
+                            <figure><img src="./imgs/news-01.png" alt="first new photo"></figure>
+                            <div class="new-content">
+                                <h5>Created SASS Section</h5>
+                                <p>New SASS Examples & Tutorials</p>
+                            </div>
+                        </div>
+                        <div class="date">3 Days Age</div>
+                    </div>
+                    <div class="new even-column">
+                        <div class="even-column">
+                            <figure><img src="./imgs/news-02.png" alt="first new photo"></figure>
+                            <div class="new-content">
+                                <h5>Changed The Design</h5>
+                                <p>A Brand New Website Design</p>
+                            </div>
+                        </div>
+                        <div class="date">5 Days Age</div>
+                    </div>
+                    <div class="new even-column">
+                        <div class="even-column">
+                            <figure><img src="./imgs/news-03.png" alt="first new photo"></figure>
+                            <div class="new-content">
+                                <h5>Team Increased</h5>
+                                <p>3 Developers Joined The Team</p>
+                            </div>
+                        </div>
+                        <div class="date">7 Days Age</div>
+                    </div>
+                    <div class="new even-column">
+                        <div class="even-column">
+                            <figure><img src="./imgs/news-04.png" alt="first new photo"></figure>
+                            <div class="new-content">
+                                <h5>Added Payment Gateway</h5>
+                                <p>Many New Payment Fateways Added</p>
+                            </div>
+                        </div>
+                        <div class="date">9 Days Age</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="head">
+                    <h1>Latest Tasks</h1>
+                </div>
+                <div class="tasks-body">
+                    <div class="new even-column">
+                        <div class="new-content">
+                            <h6>Record One New Video</h6>
+                            <p>Record Python Create Exe Project</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M160 400C160 408.8 152.8 416 144 416C135.2 416 128 408.8 128 400V192C128 183.2 135.2 176 144 176C152.8 176 160 183.2 160 192V400zM240 400C240 408.8 232.8 416 224 416C215.2 416 208 408.8 208 400V192C208 183.2 215.2 176 224 176C232.8 176 240 183.2 240 192V400zM320 400C320 408.8 312.8 416 304 416C295.2 416 288 408.8 288 400V192C288 183.2 295.2 176 304 176C312.8 176 320 183.2 320 192V400zM317.5 24.94L354.2 80H424C437.3 80 448 90.75 448 104C448 117.3 437.3 128 424 128H416V432C416 476.2 380.2 512 336 512H112C67.82 512 32 476.2 32 432V128H24C10.75 128 0 117.3 0 104C0 90.75 10.75 80 24 80H93.82L130.5 24.94C140.9 9.357 158.4 0 177.1 0H270.9C289.6 0 307.1 9.358 317.5 24.94H317.5zM151.5 80H296.5L277.5 51.56C276 49.34 273.5 48 270.9 48H177.1C174.5 48 171.1 49.34 170.5 51.56L151.5 80zM80 432C80 449.7 94.33 464 112 464H336C353.7 464 368 449.7 368 432V128H80V432z"/></svg>
+                    </div>
+                    <div class="new even-column">
+                        <div class="new-content">
+                            <h6>Record One New Video</h6>
+                            <p>Record Python Create Exe Project</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M160 400C160 408.8 152.8 416 144 416C135.2 416 128 408.8 128 400V192C128 183.2 135.2 176 144 176C152.8 176 160 183.2 160 192V400zM240 400C240 408.8 232.8 416 224 416C215.2 416 208 408.8 208 400V192C208 183.2 215.2 176 224 176C232.8 176 240 183.2 240 192V400zM320 400C320 408.8 312.8 416 304 416C295.2 416 288 408.8 288 400V192C288 183.2 295.2 176 304 176C312.8 176 320 183.2 320 192V400zM317.5 24.94L354.2 80H424C437.3 80 448 90.75 448 104C448 117.3 437.3 128 424 128H416V432C416 476.2 380.2 512 336 512H112C67.82 512 32 476.2 32 432V128H24C10.75 128 0 117.3 0 104C0 90.75 10.75 80 24 80H93.82L130.5 24.94C140.9 9.357 158.4 0 177.1 0H270.9C289.6 0 307.1 9.358 317.5 24.94H317.5zM151.5 80H296.5L277.5 51.56C276 49.34 273.5 48 270.9 48H177.1C174.5 48 171.1 49.34 170.5 51.56L151.5 80zM80 432C80 449.7 94.33 464 112 464H336C353.7 464 368 449.7 368 432V128H80V432z"/></svg>
+                    </div>
+                    <div class="new even-column">
+                        <div class="new-content">
+                            <h6>Record One New Video</h6>
+                            <p>Record Python Create Exe Project</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M160 400C160 408.8 152.8 416 144 416C135.2 416 128 408.8 128 400V192C128 183.2 135.2 176 144 176C152.8 176 160 183.2 160 192V400zM240 400C240 408.8 232.8 416 224 416C215.2 416 208 408.8 208 400V192C208 183.2 215.2 176 224 176C232.8 176 240 183.2 240 192V400zM320 400C320 408.8 312.8 416 304 416C295.2 416 288 408.8 288 400V192C288 183.2 295.2 176 304 176C312.8 176 320 183.2 320 192V400zM317.5 24.94L354.2 80H424C437.3 80 448 90.75 448 104C448 117.3 437.3 128 424 128H416V432C416 476.2 380.2 512 336 512H112C67.82 512 32 476.2 32 432V128H24C10.75 128 0 117.3 0 104C0 90.75 10.75 80 24 80H93.82L130.5 24.94C140.9 9.357 158.4 0 177.1 0H270.9C289.6 0 307.1 9.358 317.5 24.94H317.5zM151.5 80H296.5L277.5 51.56C276 49.34 273.5 48 270.9 48H177.1C174.5 48 171.1 49.34 170.5 51.56L151.5 80zM80 432C80 449.7 94.33 464 112 464H336C353.7 464 368 449.7 368 432V128H80V432z"/></svg>
+                    </div>
+                    <div class="new even-column">
+                        <div class="new-content">
+                            <h6>Record One New Video</h6>
+                            <p>Record Python Create Exe Project</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M160 400C160 408.8 152.8 416 144 416C135.2 416 128 408.8 128 400V192C128 183.2 135.2 176 144 176C152.8 176 160 183.2 160 192V400zM240 400C240 408.8 232.8 416 224 416C215.2 416 208 408.8 208 400V192C208 183.2 215.2 176 224 176C232.8 176 240 183.2 240 192V400zM320 400C320 408.8 312.8 416 304 416C295.2 416 288 408.8 288 400V192C288 183.2 295.2 176 304 176C312.8 176 320 183.2 320 192V400zM317.5 24.94L354.2 80H424C437.3 80 448 90.75 448 104C448 117.3 437.3 128 424 128H416V432C416 476.2 380.2 512 336 512H112C67.82 512 32 476.2 32 432V128H24C10.75 128 0 117.3 0 104C0 90.75 10.75 80 24 80H93.82L130.5 24.94C140.9 9.357 158.4 0 177.1 0H270.9C289.6 0 307.1 9.358 317.5 24.94H317.5zM151.5 80H296.5L277.5 51.56C276 49.34 273.5 48 270.9 48H177.1C174.5 48 171.1 49.34 170.5 51.56L151.5 80zM80 432C80 449.7 94.33 464 112 464H336C353.7 464 368 449.7 368 432V128H80V432z"/></svg>
+                    </div>
+                    <div class="new even-column">
+                        <div class="new-content">
+                            <h6>Record One New Video</h6>
+                            <p>Record Python Create Exe Project</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M160 400C160 408.8 152.8 416 144 416C135.2 416 128 408.8 128 400V192C128 183.2 135.2 176 144 176C152.8 176 160 183.2 160 192V400zM240 400C240 408.8 232.8 416 224 416C215.2 416 208 408.8 208 400V192C208 183.2 215.2 176 224 176C232.8 176 240 183.2 240 192V400zM320 400C320 408.8 312.8 416 304 416C295.2 416 288 408.8 288 400V192C288 183.2 295.2 176 304 176C312.8 176 320 183.2 320 192V400zM317.5 24.94L354.2 80H424C437.3 80 448 90.75 448 104C448 117.3 437.3 128 424 128H416V432C416 476.2 380.2 512 336 512H112C67.82 512 32 476.2 32 432V128H24C10.75 128 0 117.3 0 104C0 90.75 10.75 80 24 80H93.82L130.5 24.94C140.9 9.357 158.4 0 177.1 0H270.9C289.6 0 307.1 9.358 317.5 24.94H317.5zM151.5 80H296.5L277.5 51.56C276 49.34 273.5 48 270.9 48H177.1C174.5 48 171.1 49.34 170.5 51.56L151.5 80zM80 432C80 449.7 94.33 464 112 464H336C353.7 464 368 449.7 368 432V128H80V432z"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="head">
+                    <h1>Top Search Items</h1>
+                </div>
+                <div class="search-body even-column">
+                    <div class="body-title even-column">
+                        <p>Keyword</p>
+                        <p>Search Count</p>
+                    </div>
+                    <h6 data-count="220">Programming</h6>
+                    <h6 data-count="180">JavaScript</h6>
+                    <h6 data-count="160">PHP</h6>
+                    <h6 data-count="145">Code</h6>
+                    <h6 data-count="110">Design</h6>
+                    <h6 data-count="95">Logic</h6>
+                </div>
+            </div>
+            <div class="box">
+                <div class="head">
+                    <h1>Latest Uploads</h1>
+                </div>
+                <div class="files-body">
+                    <div class="file even-column">
+                        <div class="even-column">
+                            <figure class="figure-icon"><img src="./imgs/pdf.svg" alt="first new photo"></figure>
+                            <div class="file-content">
+                                <h5>my-file.pdf</h5>
+                                <p>Mohab</p>
+                            </div>
+                        </div>
+                        <div class="date">2.9mb</div>
+                    </div>
+                    <div class="file even-column">
+                        <div class="even-column">
+                            <figure class="figure-icon"><img src="./imgs/avi.svg" alt="first new photo"></figure>
+                            <div class="file-content">
+                                <h5>My-Video-File.avi</h5>
+                                <p>Admin</p>
+                            </div>
+                        </div>
+                        <div class="date">4.9mb</div>
+                    </div>
+                    <div class="file even-column">
+                        <div class="even-column">
+                            <figure class="figure-icon"><img src="./imgs/psd.svg" alt="first new photo"></figure>
+                            <div class="file-content">
+                                <h5>My-Psd-File.psd</h5>
+                                <p>Ahmed</p>
+                            </div>
+                        </div>
+                        <div class="date">4.5mb</div>
+                    </div>
+                    <div class="file even-column">
+                        <div class="even-column">
+                            <figure class="figure-icon"><img src="./imgs/zip.svg" alt="first new photo"></figure>
+                            <div class="file-content">
+                                <h5>My-Zip-File.zip</h5>
+                                <p>User</p>
+                            </div>
+                        </div>
+                        <div class="date">8.9mb</div>
+                    </div>
+                    <div class="file even-column">
+                        <div class="even-column">
+                            <figure class="figure-icon"><img src="./imgs/dll.svg" alt="first new photo"></figure>
+                            <div class="file-content">
+                                <h5>My-DLL-File.dll</h5>
+                                <p>Admin</p>
+                            </div>
+                        </div>
+                        <div class="date">4.9mb</div>
+                    </div>
+                    <div class="file even-column">
+                        <div class="even-column">
+                            <figure class="figure-icon"><img src="./imgs/eps.svg" alt="first new photo"></figure>
+                            <div class="file-content">
+                                <h5>My-Eps-File.eps</h5>
+                                <p>Designer</p>
+                            </div>
+                        </div>
+                        <div class="date">8.9mb</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box last-project-box">
+                <div class="head">
+                    <h1>Last Project Progress</h1>
+                </div>
+                <div class="body last-body">
+                    <h4>Got the Project</h4>
+                    <h4>Started The Project</h4>
+                    <h4>The Project About To Finish</h4>
+                    <h4>Test The Project</h4>
+                    <h4>Finish The Project & Get Money</h4>
+                </div>
+                <figure><img src="./imgs/project.png" alt="project photo"></figure>
+            </div>
+            <div class="box reminders">
+                <div class="head">
+                    <h1>Reminders</h1>
+                </div>
+                <div>
+                    <h5>
+                        Check My Tasks List
+                    </h5>
+                    <p>
+                        28/09/2022 - 12:00am
+                    </p>
+                </div>
+                <div>
+                    <h5>
+                        Check My Projects
+                    </h5>
+                    <p>
+                        26/10/2022 - 12:00am
+                    </p>
+                </div>
+                <div>
+                    <h5>
+                        Call All My Clients
+                    </h5>
+                    <p>
+                        05/11/2022 - 12:00am
+                    </p>
+                </div>
+                <div>
+                    <h5>
+                        Finish The Development Workshop
+                    </h5>
+                    <p>
+                        20/12/2022 - 12:00am
+                    </p>
+                </div>
+            </div>
+            <div class="box last-post">
+                <div class="top">
+                    <h1>Latest Post</h1>
+                    <div class="top-foot even-column">
+                        <figure><img src="./imgs/avatar.png" alt="user photo"></figure>
+                        <div class="top-foot2">
+                            <h3>Mohab</h3>
+                            <p>About 3 Hours Ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle">
+                    You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The Time, But You Can't Fool All Of The People All Of The Time.
+                </div>
+                <div class="bottom">
+                    <div class="even-column">
+                        <div class="even-column">
+                            <figure><img src="./imgs/heart-regular.svg" alt="like button"></figure>
+                            <h5>1.8K</h5>
+                        </div>
+                        <div class="even-column">
+                            <figure><img src="./imgs/comments-regular.svg" alt="comment button"></figure>
+                            <h5>500</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box social-media">
+                <div class="head">
+                    <h1>Social Media Stats</h1>
+                </div>
+                <div class="body">
+                    <div class="app even-column">
+                        <figure><img src="./imgs/twitter.svg" alt="twitter"></figure>
+                        <p>90K Followers</p>
+                        <button>Follow</button>
+                    </div>
+                    <div class="app even-column">
+                        <figure><img src="./imgs/facebook-f.svg" alt="Facebook"></figure>
+                        <p>2M Like</p>
+                        <button>Like</button>
+                    </div>
+                    <div class="app even-column">
+                        <figure><img src="./imgs/youtube.svg" alt="Youtube"></figure>
+                        <p>1M Subscirbe</p>
+                        <button>Follow</button>
+                    </div>
+                    <div class="app even-column">
+                        <figure><img src="./imgs/linkedin.svg" alt="Linkedin"></figure>
+                        <p>90K Followers</p>
+                        <button>Follow</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>
